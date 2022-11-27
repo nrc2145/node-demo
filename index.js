@@ -14,6 +14,7 @@ const authors = JSON.stringify([
 ]);
 
 const requestListener = function (req, res) {
+  console.log(`request method : ${req.method}`);
   console.log(`request url : ${req.url}`);
 
   res.setHeader('Content-Type', 'application/json');
